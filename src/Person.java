@@ -3,7 +3,6 @@ import java.util.HashMap;
 
 public class Person {
     private String name;
-
     Map pet = new HashMap<String, Pet>();
 
     public String getName() {
