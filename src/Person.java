@@ -2,6 +2,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class Person {
+
     private String name;
     Map pet = new HashMap<String, Pet>();
 

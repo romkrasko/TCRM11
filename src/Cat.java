@@ -1,45 +1,9 @@
 public class Cat extends Pet {
+
     private String sex;
     private String breed;
     private boolean inCafe;
     private int age;
-
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    }
-    public String getType() {
-        return type;
-    }
-    public void setType(String type) {
-        this.type = type;
-    }
-    public String getName() {
-        return name;
-    }
-    public String getSex() {
-        return sex;
-    }
-    public String getBreed() {
-        return breed;
-    }
-    public boolean isInCafe() {
-        return inCafe;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-    public void setInCafe(boolean inCafe) {
-        this.inCafe = inCafe;
-    }
-    public void setBreed(String breed) {
-        this.breed = breed;
-    }
 
     //default
     public Cat(){
@@ -67,7 +31,53 @@ public class Cat extends Pet {
         this.age=10;
     }
 
+    public int getAge() {
+        return age;
+    }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public boolean isInCafe() {
+        return inCafe;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public void setInCafe(boolean inCafe) {
+        this.inCafe = inCafe;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
 
     public void takeAwayFromCafe(Person owner) {
         try {

@@ -7,6 +7,7 @@ public class Lynx implements Animal {
         this.speakWord = speakWord;
         this.type = type;
     }
+
     public Lynx() {
         this.type = "Lynx";
     }
@@ -23,9 +24,7 @@ public class Lynx implements Animal {
         System.out.println(getSpeakWord());
     }
 
-
     public void info(){
         System.out.println(Cat.class.getName()+" goes "+getSpeakWord());
     }
-
 }

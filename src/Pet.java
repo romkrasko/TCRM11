@@ -1,9 +1,20 @@
 public abstract class Pet implements Animal {
+
     protected int age;
     public String name;
     private Person owner;
     protected String type;
     protected String speakWord;
+
+
+    public Pet() {
+    }
+
+    public Pet(String speakWord, int age, String name, Person owner) {
+        this.age = age;
+        this.name = name;
+        this.owner = owner;
+    }
 
     public String getOwner() {
         return owner.getName();
@@ -37,15 +48,6 @@ public abstract class Pet implements Animal {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Pet() {
-    }
-
-    public Pet(String speakWord, int age, String name, Person owner) {
-        this.age = age;
-        this.name = name;
-        this.owner = owner;
     }
 
     @Override

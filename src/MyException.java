@@ -1,5 +1,7 @@
 public class MyException extends Exception{
+
     protected String mess;
+
     public MyException(String message) {
         this.mess=message;
         //initCause(e);
