@@ -41,11 +41,11 @@ public class CatCafe {
     public void printCatsInCafe(String breed) {
         for (Cat cat : cats) {
             try {
-                String breedCat = new String(cat.getBreed());
-                if ((cat.isInCafe()) && (breedCat.equals(breed))) {
+                if ((cat.isInCafe()) && (cat.getBreed().equals(breed))) {
                     System.out.println(cat.getName() + " " + cat.getSex() + " " + cat.getBreed());
                 }
             } catch (NullPointerException ex) {
+                ex.getMessage();
             }
         }
     }
