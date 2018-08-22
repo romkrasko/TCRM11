@@ -1,13 +1,11 @@
-public class MyException extends Exception{
+public class MyException extends Exception {
 
-    protected String mess;
-
-    public MyException(String message) {
-        this.mess=message;
-        //initCause(e);
+    public MyException() {
+        super();
     }
 
-    public void printMessage() {
-        System.err.println(mess);
+    public void printMessage(){
+        System.err.println("Cat already at home");
     }
+
 }

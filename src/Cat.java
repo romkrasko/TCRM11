@@ -79,14 +79,13 @@ public class Cat extends Pet {
         this.breed = breed;
     }
 
-    public void takeAwayFromCafe(Person owner) {
-        try {
-            if (isInCafe()) throw new MyException("Cat "+getName() +" already home");
-            setInCafe(false);
-            setOwner(owner);
-        } catch (MyException ex) {
-            ex.printMessage();
+    public void takeAwayFromCafe(Person owner) throws MyException {
+
+        if (isInCafe()) {
+            throw new MyException();
         }
+        setInCafe(false);
+        setOwner(owner);
     }
 
     @Override

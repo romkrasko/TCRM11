@@ -22,7 +22,7 @@ public class Person {
     }
 
     public void acquiringPet(String name, Pet pet){
-        this.pet.put(Pet.class.getName(),this.pet);
+        this.pet.put(Pet.class.getName(),pet);
         pet.setOwner(this);
     }
 }
